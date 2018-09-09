@@ -1,0 +1,34 @@
+
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "Discord Bot",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tronax1/Aldebaran-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tronax1/Aldebaran-/issues"
+  },
+  "homepage": "https://github.com/Tronax1/Aldebaran-#readme",
+  "dependencies": {
+    "discord.js": "^11.1.0",
+    "ffmpeg-binaries": "^4.0.0",
+    "fs": "0.0.1-security",
+    "get-youtube-id": "^1.0.0",
+    "node-osu": "^1.2.0",
+    "opusscript": "0.0.6",
+    "oxford-dictionary-api": "^1.0.1",
+    "request": "^2.88.0",
+    "superagent": "^3.8.3",
+    "youtube-info": "^1.2.0",
+    "youtube-playlist-info": "^1.1.2",
+    "ytdl-core": "^0.25.2"
+  }
+}
