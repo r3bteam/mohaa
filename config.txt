@@ -1,6 +1,6 @@
-token=NDg4NDAwMzk0ODQyODAwMTI5.DnbrKw.V3__flLlkHqtnHohYHEQzFKM5wA
-owner=331081268731052042 
-prefix=!
-game=Baktash-bot
+token=process.env.BOT_TOKEN
+owner=450711003324350485 
+prefix=M
+game=Only Moha - $
 stayinchannel=true
 songinstatus=true
