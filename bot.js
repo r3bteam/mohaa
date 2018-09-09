@@ -294,4 +294,4 @@ function youtube_validate(url) {
 
 }
 
-bot.login(token);
+bot.login(process.env.BOT_TOKEN);
