@@ -6,11 +6,11 @@ const fs = require('fs');
 const getYoutubeID = require('get-youtube-id');
 const fetchVideoInfo = require('youtube-info');
 const ypi = require('youtube-playlist-info');
+var prefix = "!";
 
 var config = JSON.parse(fs.readFileSync('settings.json'));
 
 const ytAPIkey = config.ytAPIkey;
-const prefix = 'M';
 const token = config.botToken;
 const usernameID = config.usernameID;
 
