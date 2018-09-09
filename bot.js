@@ -266,7 +266,7 @@ function addToQueue(strID){
 
 
 async function searchVideo(str) {
-	let search = await axios(`https://www.googleapis.com/youtube/v3/search?part=id&type=video&q=${encodeURIComponent(str)}&key=${ytApiKey}`);
+	let search = await axios(`https://www.googleapis.com/youtube/v3/search?part=id&type=video&q=${encodeURIComponent(str)}&key=${ytAPIkey}`);
 	if (search.data.items[0] === undefined) {
 		return null;
 	} else {
