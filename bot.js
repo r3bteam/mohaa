@@ -10,7 +10,7 @@ const ypi = require('youtube-playlist-info');
 var config = JSON.parse(fs.readFileSync('settings.json'));
 
 const ytAPIkey = config.ytAPIkey;
-var prefix = "!";
+const prefix = 'M';
 const token = config.botToken;
 const usernameID = config.usernameID;
 
@@ -263,17 +263,15 @@ function addToQueue(strID){
   }
 }
 
-function searchVideo(query, callback) {
-    request("https://www.googleapis.com/youtube/v3/search?part=id&type=video&q="
-    + encodeURIComponent(query) + "&key=" + ytAPIkey, (error, response, body)=> {
-        var json = JSON.parse(body);
-        if (!json.items[0]) callback("3_-a9nVZYjk");
-        else {
-            callback(json.items[0].id.videoId);
-        }
-    });
-}
 
+function searchVideo(str) {
+	let search = await axios(`https://www.googleapis.com/youtube/v3/search?part=id&type=video&q=${encodeURIComponent(str)}&key=${ytApiKey}`);
+	if (search.data.items[0] === undefined) {
+		return null;
+	} else {
+		return search.data.items;
+	}
+}
 function youtube_playlist_parser(url) {
 
     var reg = new RegExp("[&?]list=([a-z0-9]+)", "i");
@@ -295,3 +293,4 @@ function youtube_validate(url) {
 }
 
 bot.login(process.env.BOT_TOKEN);
+
