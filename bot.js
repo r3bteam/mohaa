@@ -10,7 +10,7 @@ const ypi = require('youtube-playlist-info');
 var config = JSON.parse(fs.readFileSync('settings.json'));
 
 const ytAPIkey = config.ytAPIkey;
-const prefix = 'M';
+var prefix = "!";
 const token = config.botToken;
 const usernameID = config.usernameID;
 
