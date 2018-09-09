@@ -6,6 +6,7 @@ const fs = require('fs');
 const getYoutubeID = require('get-youtube-id');
 const fetchVideoInfo = require('youtube-info');
 const ypi = require('youtube-playlist-info');
+const axios = require("axios");
 var prefix = "!";
 
 var config = JSON.parse(fs.readFileSync('settings.json'));
