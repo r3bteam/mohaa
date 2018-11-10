@@ -1,4 +1,4 @@
-token=NDg4MzkxMDc3NTAyMzg2MTg2.Dnb8AQ.DlgXP14ZKlZkZZzcB0syj6qQT3w
+token=NTEwNzg5MzI3OTg3NTM5OTY4.DshdPA.XcGTqvWa33VdmYBGmRi2GlynrTo
 owner=479090634813341696 
 prefix=M
 game=من آلذي يتقرب منك من آجل مصلحته آسوأ من عدوك , 
